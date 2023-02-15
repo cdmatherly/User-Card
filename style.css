@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* applies flex to all divs */
+div {
+    display: flex;
+}
+.container {
+    height: 240px;
+    width: 500px;
+    position: absolute;
+    top: 5%;
+    flex-direction: column;
+}
+.header {
+    background-color: rgb(23, 162, 184);
+    flex: 2;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.body {
+    background-color: white;
+    flex: 5;
+    border: 2px solid rgba(193, 193, 193, .5);
+    border-top: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 220px;
+    width: 80%;
+    bottom: 0;
+    /* commented out margin after scaling down */
+    /* margin: 0 0 5px 15px; */
+    scale: .9;
+}
+#avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+#name {
+    font-size: 1.7em;
+}
+.location {
+    width: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+#map-icon {
+    height: 15px;
+    width: 10px;
+}
+#city {
+    font-size: 1.1em;
+}
+.bio {
+    flex-wrap: wrap;
+    font-size: 0.95em;
+}
+.settings {
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#gear-icon {
+    height: 15px;
+}
